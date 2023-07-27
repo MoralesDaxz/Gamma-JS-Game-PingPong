@@ -102,12 +102,28 @@ round.style=`background-color:transparent; color:#27FF32; font-size:30px;font-we
 select.style=`color:#00e00f;text-align:center;font-size:30px;background-color:transparent; height:40px;border:none;font-weight: bold;font-family: 'Courier New', Courier, monospace;`
 
 
-body.style=`display:flex; flex-direction:column;min-width:1180px; align-items:center;background-image: url(./img/fondo1.jpg);background-repeat:no-repeat;background-size: cover; `
-div1.style=`margin-top: 2%;border-radius:5px;display:flex; flex-direction: column;align-items:center;width:300px; height:150px;`// background-image: url(./img/pingpong.png);background-repeat:no-repeat;background-size: cover; background-position: center;`
+body.style=`display:flex; flex-direction:column;min-width:1180px; align-items:center;justify-content:space-around;background-image: url(./img/fondo1.jpg);background-repeat:no-repeat;background-size: cover; `
+div1.style=` border-radius:5px;
+            display:flex; 
+            flex-direction: column;
+            align-items:center;
+            width:450px; 
+            height:300px;
+            -webkit-box-shadow: -1px -2px 80px 23px rgba(255,18,208,1);
+-moz-box-shadow: -1px -2px 80px 23px rgba(255,18,208,1);
+box-shadow: -1px -2px 80px 23px rgba(255,18,208,1);`
+            /* box-shadow:
+  -0.8px -0.8px 6.4px rgba(0, 0, 0, 0.007),
+  0.4px 0.4px 13.2px rgba(0, 0, 0, 0.015),
+  5px 5px 21px rgba(0, 0, 0, 0.023),
+  15.3px 15.3px 32.1px rgba(0, 0, 0, 0.033),
+  37.3px 37.3px 56.4px rgba(0, 0, 0, 0.046),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;` */
 div3.style=`display:flex; flex-direction: row;align-items:center; margin-top: 2%; gap:1rem`
 
-div2.style=`margin-top: 2%;width:300px;height:150px; display:flex; justify-content: space-around`
-div4.style=`width:700px; display:flex; justify-content:space-around;margin-top:2%;  `
+div2.style=`;width:400px;height:120px; display:flex; justify-content: space-around`
+div4.style=`width:700px; display:flex; justify-content:space-around;margin-top:1%;  `
 div5.style=`display:flex; flex-direction:row;gap:70px;`
 div6.style=`display:flex;justify-content:end; align-items:center`
 
@@ -119,10 +135,10 @@ video1.style = `
 position: center;
 top: 0;
 left: 0;
-width: 150%;
-height: 160%;
+width: 100%;
+height: 100%;
 object-fit: cover;
-z-index: 0;`
+z-index: -1;`
 
 
 counterDisplayOne.style=`font-weight:bold;color:white;font-size:100px;`
@@ -154,6 +170,7 @@ font-size: 15px;
 transition: all .3s ease;
 box-shadow: rgb(186, 29, 52) 0px 10px 0px 0px;
 color: hsl(0, 0%, 100%);`
+
 btnReset.innerText=`Reset`
 btnReset.style=`
 font-size: 18px;
@@ -163,11 +180,11 @@ font-weight:bold;
   border: 0;
   cursor: pointer;
   will-change: box-shadow,transform;
-  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #ffe44e 100% );
+  background: radial-gradient( 100% 100% at 100% 0%, #ebebd9 0%, #ffe44e 100% );
   box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
   padding: 0 2em;
   border-radius: 0.3em;
-  color: #fff;
+  color: rgb(161, 154, 200);
   height: 2.6em;
   text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
-  transition: box-shadow 0.15s ease, transform 0.15s ease;`
+  transition: box-shadow 0.15s ease, transform 0.15s ease`
